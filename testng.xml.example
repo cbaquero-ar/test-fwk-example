@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All tests in different browsers" parallel="tests">
+    <test name="Windows 7 - IE9" parallel="false">
+        <-Assuming by 'Windows' any Windows 7 machine registered on the Grid->
+        <parameter name="platform" value="Windows" />
+        <parameter name="browser" value="Internet Explorer" />
+        <parameter name="browserVersion" value="9" />
+        <packages>
+            <package name="com.carolinabaquero.test.testcases.*" />
+        </packages>
+    </test>
+    <test name="Windows - Firefox (latest)" parallel="false">
+        <parameter name="platform" value="LINUX" />
+        <parameter name="browser" value="Firefox" />
+        <packages>
+            <package name="com.carolinabaquero.test.testcases.*" />
+        </packages>
+    </test>
+    <test name="Windows - Chrome (latest)" parallel="false">
+        <parameter name="platform" value="Windows" />
+        <parameter name="browser" value="Chrome" />
+        <packages>
+            <package name="com.carolinabaquero.test.testcases.*" />
+        </packages>
+    </test>
+</suite>

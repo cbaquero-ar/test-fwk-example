@@ -1,0 +1,8 @@
+Email,Password,Initials,Expected Error,Error Type
+valid.email@gmail.com,autoExample!8879,CB,,
+valid.email@anotherdomain.com,1qaz2wsx,AN,,
+valid.email@gmail.com,wrongPass,,¡Ouch! Wrong User or Password. Please, try again.,Login
+non.existent@user.com,anyValue,,¡Ouch! Wrong User or Password. Please, try again.,Login
+valid.name,somePass,,¡Ouch! Wrong email format,Validation
+valid.email@someserver.com,,,¡Ouch! Empty field.,Validation
+,sometext,,¡Ouch! Empty field.,Validation

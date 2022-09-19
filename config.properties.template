@@ -1,0 +1,55 @@
+####	A copy of this properties file named as "config.properties" should live  	#### 
+####	in your test project that uses test core with your desired configuration	#### 
+
+## Environment configuration parameters ##
+#The URL for the application on the target server
+appURL = http://yourappundertest.com
+
+# Logs level - logLevel = [debug|info]
+# Default value is 'INFO'
+#logLevel = INFO
+
+#The browser to run the tests - browser = [chrome|firefox|internet explorer]
+#Default value is 'FIREFOX'
+#browser = FIREFOX
+
+# Turn on/off the screen shot taking on failure feature - screenShotOnFailure = [Yes|No]
+# Default value is 'Yes'
+#screenShotOnFailure = Yes
+
+
+## Selenium Grid parameters ##
+
+# Indicates the use of grid for the current execution
+# Default value is 'No'
+#useSeleniumGrid = No
+
+# Selenium Grid Hub complete URL - use server names when possible
+# Default value is empty
+#seleniumGridHub = http://localhost:4444/wd/hub
+
+# Execution Platform for Grid execution - platform = [windows|xp|vista|win8|win8.1|linux|mac|android|any]
+# Default value is 'WINDOWS'
+#platform = WINDOWS
+
+# Browser version for Grid execution (optional) - leave blank and will use any available
+#browserVersion
+
+
+## Optional properties for Selenium on PageObject ##
+
+# Timeout to wait for a group of elements -  original value is 20
+#overrideElementsGroupPresentTimeout = 1
+
+# Timeout to wait for an element that is supposed to be found - original value is 10
+#overrideElementPresentTimeout = 1
+
+#Timeout to wait for an element that is NOT supposed to be found - original value is 5
+#overrideElementNotPresentTimeout = 1
+
+#Timeout to wait for an element to miss a css class - original value is 5
+#overrideElementMissesClassTimeout = 1
+
+#Timeout to wait for an element to miss a css class - original value <user_home>/Dowloads
+#downloadsDir = C:\\tmp
+#/home/user/other
